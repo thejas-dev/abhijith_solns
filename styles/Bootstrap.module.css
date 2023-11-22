@@ -1,0 +1,31 @@
+/* Start Bootstrap carousel */
+.itemP {
+    height: 59%;
+    position: relative;
+    overflow: hidden;
+  }
+  .itemP > img {
+    width: 100%;
+    object-fit: cover;
+    height: 100%;
+  }
+  
+  .caption {
+    position: absolute;
+    height: 200px;width: 500px;
+    top:0;left: 0;right: 0;bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction:  column;
+    margin: auto;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 15px;
+  }
+  
+  .caption h3 {
+    font-size: 35px;
+    color: rgb(255, 255, 255);
+  }
+  /* End Bootstrap carousel */
+  
