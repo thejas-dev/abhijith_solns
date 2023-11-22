@@ -4,6 +4,7 @@ import Carousal from '@/components/Carousal'
 import Header from '@/components/Header'
 import Join from '@/components/Join'
 import ProvideSection from '@/components/ProvideSection'
+import Queries from '@/components/Queries'
 import Image from 'next/image'
 
 export default function Home() {
@@ -15,7 +16,7 @@ export default function Home() {
         <Aboutus/>
         <ProvideSection/>
         <Join/>
-
+        <Queries/>
     </main>
   )
 }
