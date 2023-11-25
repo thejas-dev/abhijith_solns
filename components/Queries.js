@@ -40,6 +40,7 @@ export default function Queries(){
 
             <div className="flex flex-col max-w-2xl mt-4 mx-auto">
                 <h1 className='text-xl font-semibold text-gray-800 text-center'>Student's queries</h1>
+                
             </div>
 
         </main>
