@@ -10,7 +10,7 @@ const queryRoutes = require("./routes/queryRoutes")
 app.use(express.json());
 // app.use(cors());
 app.use(cors({
-  origin: '*', 
+  origin: 'https://abhijith-solns.vercel.app/', 
   credentials: true,
 }));
 app.use('/api/auth',queryRoutes);
