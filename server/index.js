@@ -11,7 +11,7 @@ app.use(express.json());
 
 // app.use(cors());
 app.use(cors({
-  origin: 'https://abhijith-solns.vercel.app/', 
+  origin: 'https://abhijith-solns.vercel.app', 
   credentials: true,
 }));
 
