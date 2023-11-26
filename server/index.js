@@ -16,7 +16,7 @@ app.get('/',(req,res)=>{
 })
 
 try{
-	mongoose.connect("mongodb+srv://thejashari:letmegoin@cluster0.nb8pyo7.mongodb.net/?retryWrites=true&w=majority",{
+	mongoose.connect("",{
 		useNewUrlParser:true,
 		useUnifiedTopology:true,
 	}).then(()=>{
