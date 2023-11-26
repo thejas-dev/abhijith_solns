@@ -1,4 +1,4 @@
-export const host = "http://localhost:3333";
+export const host = "https://abhijith-solns-server.vercel.app/";
 
 export const createQuery = `${host}/api/auth/createQuery`;
 export const getAllQueries = `${host}/api/auth/getAllQueries`;
