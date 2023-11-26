@@ -3,7 +3,10 @@ import {BiLogoGmail} from 'react-icons/bi';
 import {IoMdCall} from 'react-icons/io';
 
 export default function Footer() {
-	// body...
+	
+	const copyNumber = () => {
+		
+	}
 
 	return (
 		<footer id="contact" class="relative bg-gray-200/70 pt-8 pb-6">
@@ -15,11 +18,12 @@ export default function Footer() {
 		          Contact us on any of these platforms, we respond 1-2 business days.
 		        </h5>
 		        <div class="mt-6 lg:mb-0 mb-6">
-		           	<a href="https://www.linkedin.com/in/indumathi-sivanandham-80b91b97/" target="_blank"><button class="bg-white text-blue-600 shadow-lg p-2 font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2" type="button">
+		           	<a href="https://www.linkedin.com/in/indumathi-sivanandham-80b91b97/" target="_blank"><button class="bg-white text-blue-600 shadow-lg p-2 font-normal h-10 w-10 items-center justify-center align-center hover:scale-110 transition-all duration-200 ease-in-out rounded-full outline-none focus:outline-none mr-2" type="button">
 		            <FaLinkedin className="h-full w-full"/></button></a>
-		            <a href="mailto:indumathi@gmail.com" target="_blank"><button class="bg-white text-orange-400 shadow-lg p-2 font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2" type="button">
+		            <a href="mailto:abhijithelectronicsolution@gmail.com" target="_blank"><button class="bg-white text-orange-400 shadow-lg p-2 font-normal h-10 w-10 items-center justify-center align-center hover:scale-110 transition-all duration-200 ease-in-out rounded-full outline-none focus:outline-none mr-2" type="button">
 		            <BiLogoGmail className="h-full w-full"/></button></a>
-		            <button class="bg-white text-blue-800 shadow-lg p-2 font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2" type="button">
+		            <button 
+		            class="bg-white text-blue-800 shadow-lg p-2 font-normal h-10 w-10 items-center justify-center align-center hover:scale-110 transition-all duration-200 ease-in-out rounded-full outline-none focus:outline-none mr-2" type="button">
 		            <IoMdCall className="h-full w-full"/>
 		          </button>
 		        </div>

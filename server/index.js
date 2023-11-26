@@ -8,11 +8,13 @@ const mongoose = require('mongoose');
 const queryRoutes = require("./routes/queryRoutes")
 
 app.use(express.json());
+
 // app.use(cors());
 app.use(cors({
   origin: 'https://abhijith-solns.vercel.app/', 
   credentials: true,
 }));
+
 app.use('/api/auth',queryRoutes);
 
 app.get('/',(req,res)=>{
@@ -20,7 +22,7 @@ app.get('/',(req,res)=>{
 })
 
 try{
-	mongoose.connect("",{
+	mongoose.connect("mongodb+srv://thejashari:letmegoin@cluster0.nb8pyo7.mongodb.net/?retryWrites=true&w=majority",{
 		useNewUrlParser:true,
 		useUnifiedTopology:true,
 	}).then(()=>{
