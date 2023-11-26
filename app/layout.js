@@ -17,9 +17,9 @@ export default function RootLayout({ children }) {
         <link rel="preconnect" href="https://fonts.googleapis.com"/>
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
         <link rel="stylesheet" href="https://demos.creative-tim.com/notus-js/assets/vendor/@fortawesome/fontawesome-free/css/all.min.css"/>
-        <Script type="module" src="https://unpkg.com/@splinetool/viewer@0.9.508/build/spline-viewer.js"></Script>
         <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,500&display=swap" rel="stylesheet"/>
       </Head>
+      <Script type="module" src="https://unpkg.com/@splinetool/viewer@0.9.508/build/spline-viewer.js"></Script>
       <body className={inter.className}>{children}</body>
     </html>
   )
