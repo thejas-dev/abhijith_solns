@@ -17,7 +17,7 @@ export default function Aboutus(){
         whileInView={{ y:0,opacity:1}}
         transition={{
             duration:0.5
-        }}
+        }} id="aboutus"
         className="flex md:px-10 px-4 h-full py-[70px] md:flex-row flex-col w-full">
             <div className="flex md:w-[50%] w-full md:border-r-[1px] border-gray-400 flex-col gap-5 pr-7">
                 <div className="flex flex-col">

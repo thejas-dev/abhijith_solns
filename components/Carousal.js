@@ -32,16 +32,16 @@ export default function Carousal(){
     
 
     return (
-        <main className="w-full max-h-[90vh] bg-black">
+        <main className="w-full bg-black">
            <Carousel activeIndex={index} className="max-h-[90vh] overflow-hidden"  onSelect={handleSelect}>
           {bootstrap.map((item) => (
-            <Carousel.Item key={item.id} className={` overflow-hidden h-full w-full relative `} interval={4000}>
+            <Carousel.Item key={item.id} className={`overflow-hidden h-full w-full relative `} interval={4000}>
               <img src={item.imageUrl} alt="slides" className="w-full object-cover" />
-              <div className="bg-black/30 absolute top-0 left-0 absolute h-full w-full"/>
-              <Carousel.Caption className={`max-h-[100px] max-w-[500px] top-[24%] md:px-5 py-3 flex items-center 
+              <div className="bg-black/40 absolute top-0 left-0 absolute h-full w-full"/>
+              <Carousel.Caption className={`max-h-[100px] md:max-w-[800px] max-w-[300px] top-[24%] md:px-5 py-3 flex items-center 
               jusitfy-center flex-col mx-auto left-0 bottom-0 rounded-lg right-0 absolute `}>
                 <h3 className="lg:text-[35px] md:text-[20px] text-[17px] m-auto" >{item.title}</h3>
-                <p className="md:mt-1 lg:text-md sm:text-sm text-xs m-auto" >{item.body}</p>
+                <p className="md:mt-1 lg:text-md sm:text-sm text-xs " >{item.body}</p>
               </Carousel.Caption>
             </Carousel.Item>
           ))}
@@ -49,11 +49,11 @@ export default function Carousal(){
            {/* <div id="default-carousel" className="w-full h-full">
              <div className="w-full group h-full relative " >
                 <div id="left" className="absolute group-hover:absolute h-10 w-10 bg-black/30 p-2 right-5 cursor-pointer 
-                top-[50%] z-50 rounded-full hover:scale-110 transition-all duration-200 ease-in-out ">
+                top-[50%] z-45 rounded-full hover:scale-110 transition-all duration-200 ease-in-out ">
                     <FaChevronRight className="h-full w-full text-white/90"/>
                 </div>
                 <div id="right" className="absolute h-10 w-10 bg-black/30 p-2 left-5 cursor-pointer 
-                top-[50%] z-50 rounded-full hover:scale-110 transition-all duration-200 ease-in-out ">
+                top-[50%] z-45 rounded-full hover:scale-110 transition-all duration-200 ease-in-out ">
                     <FaChevronLeft className="h-full w-full text-white/90"/>
                 </div>
                 <div className={`w-full h-full absolute`}>

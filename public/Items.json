@@ -4,32 +4,33 @@
           "bootstrap": [
             {
               "id": 1,
-              "title": "Individual Development",
-              "body": "Ignite Your Potential Through Personalized Growth",
-              "imageUrl": "https://bedam.baskent.edu.tr/wp-content/uploads/2019/06/arduino-baslangic-egitimi-sertifika-programi-kapak.jpg",
+              "title": "Quality Internship and Project Mentoring",
+              "body": " Enhance Your Skills with Hands-On Experience and Expert Guidance",
+              "imageUrl": "https://ik.imagekit.io/d3kzbpbila/thejashari_lsgiziDKQ",
               "docs": "https://getbootstrap.com/docs/4.0/components/carousel/"
             },
             {
               "id": 2,
-              "title": "Group Activities",
-              "body": "Collaborate, Innovate, and Thrive Together",
-              "imageUrl": "https://i0.wp.com/pallavaggarwal.in/wp-content/uploads/2019/12/embedded-hardware-reviews-1.jpg",
+              "title": "Arduino & ESP32 Programming",
+              "body": "Develop Your Skills with Personalized Guidance",
+              "imageUrl": "https://ik.imagekit.io/d3kzbpbila/thejashari_Hc6dvVyCjI",
               "docs": "https://getbootstrap.com/docs/4.0/components/carousel/"
             },
             {
               "id": 3,
-              "title": "Interactive Learning",
-              "body": "Immersive Education with Hands-On Learning",
-              "imageUrl": "https://th.bing.com/th/id/R.55b932505f613f77f9aac5a1b993942e?rik=fE2nEV%2bdFfDZgQ&riu=http%3a%2f%2fwallpapercave.com%2fwp%2fwp1864279.jpg&ehk=QEwRUsvvWne8dSRdm7bjnbTBEv6zMawJszKKmTq9ibQ%3d&risl=&pid=ImgRaw&r=0",
+              "title": "Master ARM7 & 8051 Microcontrollers",
+              "body": "Personalized Learning for Microcontroller Expertise",
+              "imageUrl": "https://i0.wp.com/pallavaggarwal.in/wp-content/uploads/2019/12/embedded-hardware-reviews-1.jpg",
               "docs": "https://getbootstrap.com/docs/4.0/components/carousel/"
             },
             {
               "id": 4,
-              "title": "Individual Attention",
-              "body": "Your Success is Our Primary Focus",
-              "imageUrl": "https://res.cloudinary.com/kizmelvin/image/upload/v1587785064/kizmelvin/michael-BcgEo2CNeYA-unsplash_cdaruk.jpg",
+              "title": "Discover Raspberry Pi",
+              "body": "Explore and learn the core aspects of Raspberry Pi.",
+              "imageUrl": "https://th.bing.com/th/id/R.55b932505f613f77f9aac5a1b993942e?rik=fE2nEV%2bdFfDZgQ&riu=http%3a%2f%2fwallpapercave.com%2fwp%2fwp1864279.jpg&ehk=QEwRUsvvWne8dSRdm7bjnbTBEv6zMawJszKKmTq9ibQ%3d&risl=&pid=ImgRaw&r=0",
               "docs": "https://getbootstrap.com/docs/4.0/components/carousel/"
             }
+            
           ]
         }
       }

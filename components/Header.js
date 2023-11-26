@@ -1,29 +1,66 @@
+"use client"
+
 import {
     merriweather
     } from '../utils/fonts';
+import {RiCloseFill} from 'react-icons/ri';
+import {useState} from 'react';   
+import {RxHamburgerMenu} from 'react-icons/rx';
+
 export default function Header(){
+    const [openSideBar,setOpenSideBar] = useState(false);
 
     return (
-        <div className="w-full sticky top-0 z-50  bg-gradient-to-r from-blue-500 to-blue-800 drop-shadow-xl flex justify-between px-7 md:py-4 items-center ">
-            <div className="flex flex-col">
+        <>
+        <div className="w-full sticky top-0 z-50 bg-gradient-to-r from-blue-500 via-blue-500 to-blue-800 drop-shadow-xl flex justify-between px-7 py-[10px] items-center ">
+            <div className="flex flex-col md:py-[0px]">
                 <h1 className={`${merriweather.className} m-0 p-0 leading-none text-2xl text-white`}>
                     ABHIJITH
                 </h1>
                 <p className="text-sm m-0 p-0 font-serif text-white leading-none">Electronic solution</p>
 
             </div>
-            <div className="flex items-center gap-12">
-                <span className="text-lg text-white transition-all duration-200 ease-in-out cursor-pointer
-                hover:scale-110">Internship</span>
-                <span className="text-lg text-white transition-all duration-200 ease-in-out cursor-pointer
-                hover:scale-110">Queries</span>
-                <span className="text-lg text-white transition-all duration-200 ease-in-out cursor-pointer
-                hover:scale-110">About us</span>
-                <span className="text-lg text-white transition-all duration-200 ease-in-out cursor-pointer
-                hover:scale-110">Contact us</span>
+            <div className="hidden md:flex items-center gap-12">
+                <a href="#register" className="text-decoration-none" ><span className="text-lg text-white transition-all duration-200 ease-in-out cursor-pointer
+                hover:scale-110">Internship</span></a>
+                <a href="#queries" className="text-decoration-none" ><span className="text-lg text-white transition-all duration-200 ease-in-out cursor-pointer
+                hover:scale-110">Queries</span></a>
+                <a href="#aboutus" className="text-decoration-none" ><span className="text-lg text-white transition-all duration-200 ease-in-out cursor-pointer
+                hover:scale-110">About us</span></a>
+                <a href="#contact" className="text-decoration-none" ><span className="text-lg text-white transition-all duration-200 ease-in-out cursor-pointer
+                hover:scale-110">Contact us</span></a>
             </div> 
+            <RxHamburgerMenu 
+            onClick={()=>{setOpenSideBar(true)}}
+            className="h-7 w-7 md:hidden cursor-pointer text-white"/>
 
         </div>
+         <div className={`md:hidden fixed transition-all duration-200 ease-in-out bg-gradient-to-b from-blue-500 via-blue-700 to-blue-800 ${openSideBar ? 'top-0' : 'top-[100%]'} left-0 h-full z-50 w-full`}>
+            <div className="w-full flex flex-col relative justify-between px-7 pt-[80px] gap-5 items-center ">
+                <RiCloseFill 
+                onClick={()=>setOpenSideBar(false)}
+                className="h-7 w-7 text-white absolute top-5 right-5 cursor-pointer"/>
+                <div className="flex flex-col md:py-[0px] items-center">
+                    <h1 className={`${merriweather.className} m-0 p-0 leading-none text-2xl text-white`}>
+                        ABHIJITH
+                    </h1>
+                    <p className="text-lg m-0 p-0 mt-2 font-serif text-white leading-none">Electronic solutions</p>
 
+                </div>
+                <div className="flex flex-col items-center gap-12">
+                    <a onClick={()=>setOpenSideBar(false)} href="#register" className="text-decoration-none" ><span className="text-lg text-white transition-all duration-200 ease-in-out cursor-pointer
+                    hover:scale-110 ">Internship</span></a>
+                    <a onClick={()=>setOpenSideBar(false)} href="#queries" className="text-decoration-none" ><span className="text-lg text-white transition-all duration-200 ease-in-out cursor-pointer
+                    hover:scale-110">Queries</span></a>
+                    <a onClick={()=>setOpenSideBar(false)} href="#aboutus" className="text-decoration-none" ><span className="text-lg text-white transition-all duration-200 ease-in-out cursor-pointer
+                    hover:scale-110">About us</span></a>
+                    <a onClick={()=>setOpenSideBar(false)} href="#contact" className="text-decoration-none" ><span className="text-lg text-white transition-all duration-200 ease-in-out cursor-pointer
+                    hover:scale-110">Contact us</span></a>
+                </div> 
+               
+
+            </div>
+        </div>
+        </>
     )
 }

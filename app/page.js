@@ -7,6 +7,7 @@ import Join from '@/components/Join'
 import ProvideSection from '@/components/ProvideSection'
 import Queries from '@/components/Queries'
 import Image from 'next/image'
+import Footer from '@/components/Footer';
 
 export default function Home() {
   return (
@@ -19,6 +20,7 @@ export default function Home() {
         <ProvideSection/>
         <Join/>
         <Queries/>
+        <Footer />
     </main>
   )
 }
