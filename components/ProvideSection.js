@@ -13,7 +13,6 @@ export default function ProvideSection(){
                         className="flex flex-col gap-7 md:px-7 py-3">
                             <motion.div 
                             initial={{
-                               
                                 opacity:0
                             }}
                             whileInView={{
