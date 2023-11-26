@@ -8,7 +8,11 @@ const mongoose = require('mongoose');
 const queryRoutes = require("./routes/queryRoutes")
 
 app.use(express.json());
-app.use(cors());
+// app.use(cors());
+app.use(cors({
+  origin: 'https://abhijith-electronics.vercel.app', 
+  credentials: true,
+}));
 app.use('/api/auth',queryRoutes);
 
 app.get('/',(req,res)=>{
