@@ -61,7 +61,7 @@ export default function StaffComponent() {
 	            <div className="w-full grid md:grid-cols-5 px-5 py-3 gap-5 sm:grid-cols-3 xs:grid-cols-3 grid-cols-1">
 	            	{
 	            		allRegisters?.map((register,j)=>(
-	            			<div>
+	            			<div key={j}>
 		            			<div key={j} className="flex flex-col p-3 rounded-lg border-gray-500 border-[1px] shadow-md bg-gray-50 shadow-gray-400/20">
 		            				<h1 className="text-[17px] text-gray-800 hover:text-blue-500 cursor-pointer font-semibold">{register?.name}</h1>
 		            				<div className="w-[95%] mx-auto my-2 bg-gray-400 h-[1.1px]" />
